@@ -1,9 +1,10 @@
 .homepageWrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
-  height: 95vh;
+  height: 100vh;
 }
 
 .formWrapper {
@@ -12,6 +13,33 @@
   border-radius: 10px;
   width: 400px;
   max-width: 90%;
+}
+
+.formWrapperText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 10vh; */
+}
+
+.formWrapperText h2{
+  margin: 0;
+}
+
+.passwordResetText{
+  /* height: 10vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.passwordResetText a{
+  color: #8951f9;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 footer {
@@ -54,6 +82,7 @@ footer a {
 
 .btn {
   border: none;
+  font-weight: bold;
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;
@@ -141,10 +170,50 @@ footer a {
 
 .editorWrap{
   background: #fff;
+  height: 97vh;
   /* padding: 16px; */
 }
 
 .leaveBtn{
   margin-top: 20px;
   background: #8951f9;
+}
+
+.copyBtn{
+  background: #eee;
+  color: #000;
+}
+
+.contextMenu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contextMenu ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  z-index: 10000;
+}
+
+.contextMenu ul li{
+  padding-right: 10px;
+  padding-top: 10px;
+
+}
+
+.icon-large {
+  font-size: 24px;
+  /* width: 50/px; */
+}
+
+.icon-large:hover{
+  font-size: 32px;
 }
