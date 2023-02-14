@@ -5,6 +5,8 @@ import Editor from './Editor'
 import { AiOutlineCloudDownload, AiOutlineCopy } from 'react-icons/ai';
 import { BiReset } from 'react-icons/bi';
 import CodeMirror from '@uiw/react-codemirror';
+import {vscodeDark} from "@uiw/codemirror-theme-vscode"
+
 
 const EditorPage = () => {
   const [clients, setClients] = useState([{ socket: 1, username: "Aditya K" }, { socket: 2, username: "Shivangi P" }, { socket: 3, username: "Mohit M" }])
@@ -44,7 +46,7 @@ const EditorPage = () => {
         value={code}
         height="100vh"
         onChange={(e) => { setCode(e)}}
-        theme="dark"
+        theme={vscodeDark}
         options={{
         }}
       /></div>
